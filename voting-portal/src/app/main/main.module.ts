@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialModules } from "../modules/material.module";
 import { MainRoutingModule } from "./main.routing.module";
+
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { VotingpageComponent } from "./components/votingpage/votingpage.component";
 
