@@ -1,0 +1,116 @@
+<body>
+    <div class="toolbar">
+    <img src="./assets/gordoncollege.png"/>
+    <span>ONLINE VOTING SYSTEM</span>
+      <div class="spacing"></div>
+      <div class="logout">
+        <div class="name">
+          <p>Christian Edrick A. Figarido</p>
+        </div>
+        <div class="logout-btn">
+          <button mat-button><mat-icon>input</mat-icon></button>
+        </div>
+      </div>
+  </div>
+  
+  <section>
+    <div class="content">
+      <div class="introduction">
+        <div class="image">
+          <img src="./assets/gordoncollege.png"/>
+        </div>
+        <div class="text">
+          <span><strong>GORDON COLLEGE</strong><br>ONLINE VOTING SYSTEM</span>
+        </div> 
+      </div>
+    </div>
+  
+    <div class="gcians">
+      <div class="gcians-text">
+        <span>MAKE YOUR VOTE COUNT <strong class="lighten">GCIANS!</strong></span>
+      </div>
+      <div class="gcians-img">
+        <img src="./assets/student.png">
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <div class="btn">
+    <p>Voting for the GC SSC 2022 Election is now open. Cast your ballot!</p>
+      <button mat-button routerLink="/dashboard"><span>VOTE NOW<mat-icon>chevron_right</mat-icon></span></button>
+    
+    
+  </div>
+  <div class="announce">
+    <mat-icon>announcement</mat-icon>
+    <h1>Announcements</h1>
+  </div>
+  
+  
+  <div class="voting-poll">
+    <div class="countdown">
+      <div class="countdown-box">
+        <div class="voting-text">
+          <h1>VOTING CLOSES<br>6PM ON FRIDAY 25TH OF MARCH</h1>
+        </div>
+        <div class="time">  
+          <ul>
+            <li>    
+              <div class="gctimer">
+                <span class="date">{{days}}</span>              
+              </div>
+              <span class="day">Day</span>
+            </li>
+            <li>
+              <div class="gctimer">
+                <span class="hours">{{hrs}}</span>             
+              </div>
+              <span class="hrs">Hours</span>
+            </li>
+            <li>
+              <div class="gctimer">
+                <span class="minutes">{{min}}</span>
+              </div>
+              <span class="min">Minutes</span>
+            </li>
+            <li>
+              <div class="gctimer">
+                <span class="second">{{sec}}</span>
+              </div>
+              <span class="sec">Second</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="poll">
+      <div class="poll-box">
+        <h1>QUICK POLL</h1>
+      </div>
+        <div class="question">
+          <span>What qualities do you think are important for a leader to have?</span>
+        </div>
+        <mat-radio-group>
+          <div class="radio-box">
+            <mat-radio-button value="1">Inspirational</mat-radio-button>
+          </div>
+          <div class="radio-box">
+            <mat-radio-button value="2">Qualified</mat-radio-button>
+          </div>
+          <div class="radio-box">
+            <mat-radio-button value="3">Honest</mat-radio-button>
+          </div>
+          <div class="radio-box">
+            <mat-radio-button value="4">Integrity</mat-radio-button>
+          </div>    
+        </mat-radio-group>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  
+  
+  </body>
+  
