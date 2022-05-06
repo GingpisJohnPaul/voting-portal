@@ -1,49 +1,36 @@
-<mat-grid-list cols="1" rowHeight="200px">
-  <mat-grid-list cols="2" rowHeight="200px">
-
-   <mat-grid-tile style="margin-left:5%">
-   <img src="assets/logo2.png">
-   <img src="assets/logo1.png">
-   <img class="editimg" src="assets/logo3.png">
-   </mat-grid-tile>
-   <mat-grid-tile>
-           <h1><b>GORDON COLLEGE</b><br> Online Voting System</h1>
-       
-   </mat-grid-tile>
-
-      
+<div class="iconcontent">
+  <div class="iconlogo">
+    <mat-grid-list cols="3" rowHeight="220px">
+      <mat-grid-tile>
+        <img src="assets/logo2.png">
+        <img src="assets/logo1.png">
+          <img class="editing" src="assets/logo3.png">
+      </mat-grid-tile>  
     </mat-grid-list>
-  
-  
-</mat-grid-list>
+      <span><strong>GORDON COLLEGE</strong>Online Voting System</span>
+  </div>
+</div>
 
-<mat-grid-list cols="2" rowHeight="450px">
-  <mat-grid-tile>
+<div class="vector">
+  <div class="bgd">
       <img class="background" src="assets/background.png">
-   </mat-grid-tile>
-  <mat-grid-tile>
-      
-
-<form class="example-form">
-  <h4 class="sp">STUDENT PORTAL</h4>
-  <p>
-      <mat-form-field appearance="outline" class="border-red">
-        <mat-label>Domain Email</mat-label>
-        <input matInput placeholder="Domain Email">
-      </mat-form-field>
-    </p>
-
-    <p>
-      <mat-form-field appearance="outline">
-        <mat-label>Password</mat-label>
-        <input matInput placeholder="Password">
-      </mat-form-field>
-    </p>
-    <button mat-flat-button class="btn">Login</button><br><br>
-    <a style="margin-left:29%;margin-top:10px;color:darkgreen">Forgot Your Password ?</a>
-</form>
-
-  
-  </mat-grid-tile>
-
-</mat-grid-list>
+  </div>
+  <div class="form">
+    <form class="example-form">
+      <h1>STUDENT PORTAL</h1>
+          <div class="put">
+            <mat-icon>account_box</mat-icon>
+            <input matInput placeholder="Domain Email">
+          </div>
+          <div class="put">
+            <mat-icon>lock</mat-icon>
+            <mat-icon class="eye">remove_red_eye</mat-icon>
+            <input type="password" matInput placeholder="Password">
+          </div>
+        <div class="btn">
+          <button mat-flat-button>Login</button><br><br>
+          <a href="#">Forgot Your Password ?</a>
+        </div>
+    </form>
+  </div>
+</div>

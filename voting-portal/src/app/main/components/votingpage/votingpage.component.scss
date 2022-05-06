@@ -14,6 +14,15 @@
         
 }  
 */
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 img {
     border-radius: 50%;
     width: 150px;
@@ -50,6 +59,10 @@ img {
     background-color: #eeeeee;
     color: rgb(0, 0, 0);
     font-weight: 700;
+
+    p{
+      margin-right: 20px;
+    }
   }
   
   .headers{
@@ -174,3 +187,185 @@ img {
     font-size: 15px;
     font-family: Arial Rounded MT Bold;
    }
+   
+
+
+ section{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    .modal1{
+      width: 450px;
+      height: 560px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 15px;
+      background: #fff;
+      z-index: 1;
+      position: relative;
+ 
+     .icon{
+       z-index: -1000;
+       margin: 0 auto;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       transform: translate(0%, -50%);
+       width: 130px;
+       height: 130px;
+       background: #fff;
+       border-radius: 50%;
+       i{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+         font-size: 80px;
+       }
+ 
+     }
+     .text{
+       top: 35px;
+       bottom: 30px;
+       position: relative;
+       
+       h1{
+         text-align: center;
+         font-weight: 800;
+         font-size: 30px;
+       }
+     }  
+     .modal-box{
+       margin-top: 50px;
+       position: relative;
+       width: 100%;
+      
+       .modal-content{
+         width: 95%;
+         margin: 0 auto;
+         background: rgba(244, 244, 244);
+         border-radius: 10px;
+ 
+         ul{
+           padding: 25px;
+ 
+           li{
+             text-align: justify;
+             margin-top: 5px;
+             line-height: 25px;
+             font-size: 18px;
+           }
+         }
+         .inp{	
+           margin: 0 auto;
+           width: 70%;
+ 
+           input{
+             width: 100%;
+             padding: 20px 60px;
+             margin-bottom: 20px;
+             background: rgba(211, 211, 211);
+             border: none;
+             outline: none;
+             transition: 0.6s;
+           }
+           input:hover{
+             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+           }
+         }
+       }
+       .modal-footer1{
+         margin: 0 auto;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         margin-top: 40px;
+ 
+         button{
+           height: 50px;
+           width: 150px;
+           border-radius: 40px;
+           outline: none;
+           border: none;
+           background: rgba(76, 169, 29);
+           color: #fff;
+           font-size: 30px;
+           text-transform: uppercase;
+         }
+       }	
+     }
+   }
+  }
+
+.submit{
+  float: right;
+  margin: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+    i{
+      margin-right: 5px;
+    }
+    a{
+      background: green;
+      padding: 20px 70px;
+      border-radius: 25px;
+      overflow: hidden;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+.mod{
+	position: absolute;
+	top: -60%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(211,211,211, 0.8);
+	transition: 0.4s;
+	visibility: hidden;
+  opacity: 0;
+}
+.mod:target{
+  visibility: visible;
+  opacity: 1;
+}
+.mod-box{
+	position: relative;
+	width: 450px;
+  height: 560px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  background: #fff;
+  z-index: 1;
+
+  a{
+    position: absolute;
+    top: -2%;
+    left: 95%;
+    right: 0;
+    bottom: 0;
+    background: red;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 35px;
+  }
+}

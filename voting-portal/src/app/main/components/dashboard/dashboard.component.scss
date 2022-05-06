@@ -2,6 +2,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     padding: 0;
@@ -46,7 +47,7 @@ body{
     }
 }
 section{
-    margin: 80px 0 0 0;
+    margin: 30px 0 0 0;
     .content{
         height: 7rem;
         width: 100%;
@@ -94,6 +95,7 @@ section{
             -webkit-text-stroke-width: 2px;
             letter-spacing: 10px;
             color: #fff;
+            transition: 0.6s ease-in-out;
           strong{
             -webkit-text-fill-color: #fff;
             color: #fff;
@@ -117,15 +119,15 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    p{
-        
-      font-size: 26px;
-      color: #000;
-      letter-spacing: 3px;
-      margin-right: 5px;
-    }
+    
+        p{
+            font-size: 26px;
+             color: #000;
+            letter-spacing: 3px;
+            margin-right: 15px;
+        }
     button{
-        padding: 15px 0;
+        padding: 15px 3px;
         margin-top: -12px;
         border-radius: 10px;
         outline: none;
@@ -134,17 +136,18 @@ section{
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
         span{
-            font-size: 35px;
+            transition: 0.6s ease-in-out;
+            margin: 13px;
+            font-size: 33px;
             color: #fff;
             mat-icon{
-                margin-left: 5px;
+                margin-left: 10px;
                 transform: scale(2.5);
                 transition: 0.5s ease;
             }
         }        
     }
-    button:hover mat-icon{
-        
+    button:hover mat-icon{     
         color: rgba(36, 255, 36, 1);
         padding-left: 2px;
     }
@@ -153,6 +156,7 @@ section{
     position: relative;
     width: 95%;
     margin: 0 auto;
+    max-width: 1800px;
     mat-icon{
         color: green;
         left: 20px;
@@ -170,7 +174,7 @@ section{
       h1:after{
         content: "";
         display: block;
-        width: 1050px;
+        width: 1400px;
         height: 2px;
         background-color: #000;
         position: absolute;
@@ -191,6 +195,7 @@ section{
         margin: 20px;
 
         .countdown-box{
+            transition: 0.6s ease-in-out;
             margin: 10px;
             .voting-text{
                 text-align: center;
@@ -268,26 +273,201 @@ section{
             flex-direction: column;
 
             .radio-box{
+                
                 width: 95%;
-                padding: 15px 0;
+                padding: 18px 0;
                 margin: 5px auto;
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
                 border-radius: 5px;
 
                 mat-radio-button{
                     margin-left: 10px;
+
                 }
             }
         }
     }
 }
-@media only screen and (max-width: 1300px){
-    section{
-        .gcians{
+@media only screen and (max-width: 2150px){
+    .gcians{
+        margin-left: -100px !important;
+        height: 250px !important;
+        .gcians-text{
+            span{
+                line-height: 110px;
+                font-size: 120px;
+                letter-spacing: 15px;
+            }
+        }
+        .gcians-img{
+
+            img{
+                height: 370px !important;
+            }
+        }
+    }
+    .voting-poll{
+        width: 95% !important;
+        margin: 0 auto;
+
+        .countdown{
+            height: 370px;
+            width: 70%;
+            margin: 20px;
+        }
+        .poll{
+            .poll-box{
+                height: 70px;
+
+                h1{
+                    font-size: 40px;
+                    line-height: 70px;
+                }
+            }
+            width: 480px;
+            height: 560px;
+            margin-right: 18px;
+
+            mat-radio-group{
+                .radio-box{
+                    width: 95%;
+                    padding: 30px 0;
+                    margin: 10px auto;
+                    font-size: 25px;
+                }    
+            }
+            .question{         
+                span{             
+                    font-size: 21px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1850px){
+    .gcians{
+        margin-left: -20px !important;
+        height: 200px !important;
+        .gcians-text{
+                span{
+                line-height: 90px;
+                font-size: 100px !important;
+                letter-spacing: 10px;
+                }
+        }
+        .gcians-img{
+            img{
+                height: 301px !important;
+            }
+        }
+    }
+    .announce{
+        max-width: 1600px !important;
+          h1:after{
+            width: 1200px;
+        }
+    }
+    .voting-poll{
+        background-color: transparent !important;
+        width: 95% !important;
+
+        .poll{
+            margin: 20px;
+            width: 370px;
+            height: 440px;
+            .poll-box{
+               width: 100%;
+               height: 45px;
+               h1{
+                   line-height: 45px;
+                   text-align: center;
+                   color: #fff;
+                   font-size: 35px;
+               }
+            }
+            .question{
+                padding: 10px 20px 20px 20px;                
+                span{             
+                    font-size: 17px;
+                    text-align: justify;
+                }
+            }
+            mat-radio-group{  
+                .radio-box{
+                    font-size: 16px;
+                    width: 95%;
+                    padding: 18px 0;
+                    margin: 8px auto;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1700px){
+    .gcians{
+        .gcians-text{          
+            span{
+                line-height: 90px;
+                font-size: 90px !important;
+                letter-spacing: 10px;
+            }
+        }
+        .gcians-img{
+            img{
+                height: 301px !important;
+            }
+        }
+    }
+    .announce{
+        max-width: 1700px !important;
+          h1:after{
+            width: 1050px;
+        }
+    }
+    
+}
+@media only screen and (max-width: 1600px){
+    .gcians{
+        max-width: 1600px;
+        .gcians-text{ 
+            margin-left: 10px;
+            span{
+                
+                line-height: 90px;
+                font-size: 90px !important;
+                letter-spacing: 10px;
+            }
+
+        }
+    }  
+
+}
+@media only screen and (max-width: 1400px){
+    .gcians{
+
+        .gcians-text{
             
+            span{
+                line-height: 90px;
+                font-size: 80px !important;
+                letter-spacing: 10px;
+            }
+        }
+    }
+    .announce{
+        max-width: 1400px !important;
+          h1:after{
+            width: 950px;
+        }
+    }
+}
+@media only screen and (max-width: 1303px){
+    section{
+        .gcians{ 
             .gcians-text{
                 width: 70%;
-                font-size: 80px;
+                font-size: 40px !important;
                 line-height: 75px;
             }
           }
@@ -326,10 +506,12 @@ section{
   section{
       .gcians{
           .gcians-text{
-            width: 80%;
-              font-size: 70px;
-              line-height: 70px;
-              margin-left: 20px;
+            margin-left: 40px;
+              span{
+                font-size: 70px;
+                line-height: 70px;
+                
+              }
           }
         }
     }
@@ -364,26 +546,44 @@ section{
         }
     }
 }
-@media only screen and (max-width: 1080px){
-    .btn{
-        width: 95%;
-        margin: 0 auto !important;
-        p{
-            font-size: 22px;
-        }
-    }
-}
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 1140px){
     .gcians{
         .gcians-text{
-            width: 90%;
-            font-size: 60px !important;
+          margin-left: 40px;
+            span{
+              font-size: 65px !important;
+              
+            }
+        }
+    }
+  } 
+@media only screen and (max-width: 1088px){
+    .gcians{
+        .gcians-text{
+          margin-left: 35px !important;
+            span{
+              font-size: 60px !important;
+            }
+        }
+        .gcians-img{
+            margin-right: -50px;
         }
     }
     .voting-poll{
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+    .btn{
+        width: 95%;
+        margin: 0 auto !important;
+        p{
+            font-size: 22px !important;
+        }
+    }
+}
+@media only screen and (max-width: 1070px){
+    .voting-poll{
         .voting-text{
             h1{
                 font-size: 35px !important;
@@ -391,34 +591,58 @@ section{
             }
         }
     }
-}
-@media only screen and (max-width: 992px){
-  section{
-      .gcians{
-          .gcians-text{
-              font-size: 45px;
-              line-height: 70px;
-              text-align: center;
-          }
+    .gcians{
+        .gcians-text{
+            width: 90%;
+            font-size: 60px !important;
         }
     }
+}
+@media only screen and (max-width: 1021px){
+    .gcians{
+        .gcians-text{
+            margin-left: 40px !important;
+            width: 90%;
+            font-size: 60px !important;
+        }
+    }
+}
+@media only screen and (max-width: 1020px){
     .btn{
         padding-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
-
         p{
             font-size: 26px;
             text-align: center;
             line-height: 25px;
         }
         button{
-            margin-top: 5px;
+            padding: 12px 3px;
+            margin-top: 2px !important;
         }
     }
     .announce{
-        padding-top: 20px;
+        padding-top: 30px !important;
+
+        mat-icon{
+            top: 48px;
+        }
+    }
+}
+@media only screen and (max-width: 992px){
+  section{
+      .gcians{
+          .gcians-text{
+              font-size: 45px !important;
+              width: 95%;
+              line-height: 70px;
+          }
+        }
+    }
+    .announce{
+        padding-top: 25px !important;
         mat-icon{
             top: 40px;
         }
@@ -430,14 +654,51 @@ section{
             display: none;
         }
     }
-}
-@media only screen and (max-width: 800px){
-    .gcians{
-        .gcians-text{
-            font-size: 50px !important;
-            text-align: center;
+    .voting-poll{
+
+        .countdown{
+            width: 100% !important;
         }
     }
+}
+@media only screen and (max-width: 919px){
+    section{
+        .gcians{
+            margin-top: 30px;
+            margin-bottom: 35px;
+            position: relative;
+            .gcians-text{
+                width: 100% !important;
+                font-size: 40px !important;
+                line-height: 50px;
+                z-index: 100000;
+                text-align: center;
+            }
+            .gcians-img{
+                float: none;
+                margin: 0 !important;
+                position: absolute;
+                top: 50%;
+                left: 80%;
+                right: 0;
+                transform: translate(-50%, -50%);
+                opacity: 0.5 !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 885px){
+    section{
+        .gcians{
+            .gcians-text{
+                font-size: 40px !important;
+                width: 95%;
+                line-height: 70px;
+            }
+          }
+      }
+}
+@media only screen and (max-width: 816px){
     .announce{
         margin-top: 20px;
     }
@@ -474,29 +735,8 @@ section{
             }
         }
     }
-    section{
-        .gcians{
-            margin-top: 30px;
-            margin-bottom: 35px;
-            position: relative;
-            .gcians-text{
-                width: 100% !important;
-                font-size: 40px !important;
-                line-height: 50px;
-                z-index: 100000;
-                text-align: center;
-            }
-            .gcians-img{
-                float: none;
-                margin: 0 !important;
-                position: absolute;
-                top: 50%;
-                left: 80%;
-                transform: translate(-50%, -50%);
-            }
-        }
-    }
     .btn{
+        margin-top: 50px !important;
         p{  
             font-size: 22px;
         }
@@ -515,7 +755,7 @@ section{
         }
     }   
 }
-@media only screen and (max-width: 630px){
+@media only screen and (max-width: 660px){
     .toolbar{
         span{
             display: none;
@@ -537,6 +777,16 @@ section{
             }
         }
     }
+    section{
+        .gcians{
+            .gcians-text{
+                span{
+                    font-size: 55px !important;
+                    line-height: 60px;
+                }
+            }
+          }
+      }
     .voting-poll{
         .countdown{
             width: 100%;
